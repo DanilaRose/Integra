@@ -1,0 +1,125 @@
+.cart {
+  padding-top: 40px;
+  background-color: #e5e5e53d;
+}
+
+.slider {
+  padding-bottom: 58px;
+  display: -webkit-box;
+  display: flex;
+}
+
+.slider1 {
+  margin: 0 auto;
+  padding-left: 20px;
+  max-width: 470px;
+}
+
+.slider1-item_img {
+  border-radius: 8px;
+  background-color: white;
+}
+
+.slider1-item_img img {
+  padding: 29px 170px 29px 170px;
+}
+
+.slider2 {
+  margin: 0 auto;
+  position: relative;
+  max-width: 70px;
+}
+
+.slider2-item {
+  border-radius: 8px;
+  margin-top: 21.4px;
+  background-color: white;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+}
+
+.slider2-item img {
+  width: 17px;
+  height: 54px;
+  margin: 7px 28px 7px 28px;
+}
+
+.prev {
+  display: none;
+}
+
+.next {
+  background: white url(../img/card/Vector.svg) center no-repeat;
+  position: absolute;
+  bottom: 0;
+  border: none;
+  border-radius: 8px;
+  height: 4%;
+  width: 100%;
+}
+
+.section-categories-link, .section-subcategories-link {
+  font-size: 18px;
+  line-height: 24px;
+  color: #666666;
+}
+
+.section-cart-title {
+  padding-top: 10px;
+  padding-bottom: 26px;
+  max-width: 545px;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 36px;
+  color: #333333;
+}
+
+.section-cart-manufacturer, .section-cart-vendor, .section-cart-price {
+  font-size: 18px;
+  line-height: 32px;
+  color: #666666;
+}
+
+.section-cart-manufacturer span, .section-cart-vendor span, .section-cart-price span {
+  color: black;
+}
+
+.section-cart-order {
+  font-size: 18px;
+  line-height: 32px;
+  color: #666666;
+}
+
+.section-cart-order span {
+  font-weight: 600;
+}
+
+.section-cart-order::after {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  content: '';
+  display: block;
+  width: 570px;
+  height: 1px;
+  background-color: #7e808421;
+}
+
+.section-cart-button {
+  margin-top: 20px;
+  padding: 14px 40px 14px 40px;
+  font-size: 20px;
+  line-height: 21px;
+  color: #FDFDFD;
+  border-radius: 30px;
+  background: -webkit-gradient(linear, left top, right top, from(#1DA1F2), to(#009FFC));
+  background: linear-gradient(90deg, #1DA1F2 0%, #009FFC 100%);
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.02);
+  border: none;
+}
+
+.descriptions {
+  font-size: 18px;
+  line-height: 25px;
+  color: #333333;
+}

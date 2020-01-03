@@ -1,0 +1,41 @@
+@import 'head.sass'
+@import 'variables.sass'
+@import 'main.sass'
+@import 'advantage.sass'
+@import 'category.sass'
+@import 'contact.sass'
+@import 'footer.sass'
+@import 'page.sass'
+@import 'card.sass'
+@import 'information.sass'
+
+
+.container
+    &-fluid 
+        max-width: 1200px
+body 
+    font-family: 'Futura New'
+button
+    &:focus
+        outline: none
+@media screen and ( max-width: 1200px )
+    .container
+        &-fluid 
+            max-width: 1140px
+
+@media screen and ( max-width: 992px )
+    .container
+        &-fluid 
+            max-width: 960px  
+@media screen and ( max-width: 768px )
+    .container
+        &-fluid 
+            max-width: 720px  
+@media screen and ( max-width: 576px )
+    .container
+        &-fluid 
+            max-width: 540px  
+@media screen and ( max-width: 415px )
+    .container
+        &-fluid 
+            max-width: 311px  

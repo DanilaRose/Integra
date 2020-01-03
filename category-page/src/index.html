@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content= />
+        <meta name="author" content= />
+        <link rel="stylesheet" href="css/animate.min.css">
+        <link rel="stylesheet" href="css/hover-min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700&display=swap&subset=cyrillic" rel="stylesheet">
+        <link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="slick/slick.css">
+        <link rel="stylesheet" href="slick/slick-theme.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>" type="text/javascript"></script>
+        <title>CategoryPage</title>
+    </head>
+    <body>
+
+        <section class="head">
+            <div class="container-fluid">
+                <div class="head-item">
+                    <div class="head-item_logo"><a href="#"><img src="img/head/logo.png" alt="logo"></a></div>
+                    <div class="head-nav">
+                        <div class="head-nav_item">
+                            <a class="head-nav_item__collapsible">Каталог товаров <img class="head-nav_item__collapsible__arrow" src="img/head/arrow.svg" alt="arrow"></a>
+                            <div class="content">
+                                <div class="contents">
+                                    <div class="contents-link-head">Спецодежда</div>
+                                    <a href="" class="contents-link">Комбинезоны</a>
+                                    <a href="" class="contents-link">Полукомбинезоны</a>
+                                    <a href="" class="contents-link">Куртки</a>
+                                    <a href="" class="contents-link">Халаты</a>
+                                    <a href="" class="contents-link">Жилеты</a>
+                                    <a href="" class="contents-link">Фартуки</a>
+                                    <a href="" class="contents-link">Рубашки, спецовки</a>
+                                    <a href="" class="contents-link">Штаны и брюки</a>
+                                    <a href="" class="contents-link">Внутренняя одежда</a>
+                                    <a href="" class="contents-link">Сигнальная одежда</a>
+                                    <a href="" class="contents-link">Униформа</a>
+                                </div>
+                                <div class="contents">
+                                    <div class="contents-link-head">Спецобувь</div>
+                                    <a href="" class="contents-link">Ботинки рабочие</a>
+                                    <a href="" class="contents-link">Сапоги рабочие</a>
+                                    <a href="" class="contents-link">Сапоги резиновые</a>
+                                    <a href="" class="contents-link">Шипы для обуви</a>
+                                </div>
+                                <div class="contents">
+                                    <div class="contents-link-head">Средства защиты</div>
+                                    <a href="" class="contents-link">Защита головы</a>
+                                    <a href="" class="contents-link">Защита глаз и лица</a>
+                                    <a href="" class="contents-link">Защита органов<br>дыхания</a>
+                                    <a href="" class="contents-link">Защита органов<br>слуха</a>
+                                    <a href="" class="contents-link">Защита от падения<br>с высоты</a>
+                                    <a href="" class="contents-link">Набор защитного<br>оборудования</a>
+                                </div>
+                                <div class="contents">
+                                    <div class="contents-link-head">Бренды</div>
+                                    <a href="" class="contents-link">Albetr</a>
+                                    <a href="" class="contents-link">Amyto</a>
+                                    <a href="" class="contents-link">Antony Gill</a>
+                                    <a href="" class="contents-link">Delta</a>
+                                    <a href="" class="contents-link">Delta Plus</a>
+                                    <a href="" class="contents-link">Dossi</a>
+                                    <a href="" class="contents-link">Du Pont</a>
+                                    <a href="" class="contents-link">FalkPit</a>
+                                    <a href="" class="contents-link">Fanotek</a>
+                                    <a href="" class="contents-link">FalkPit</a>
+                                    <a href="" class="contents-link">Fanotek</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="head-nav_item"><a href="#">Доставка</a></div>
+                        <div class="head-nav_item"><a href="#">О нас</a></div>
+                        <div class="head-nav_item"><a href="#">Контакты</a></div>
+                        <div class="head-nav_item">
+                            <span class="language">EN &nbsp;</span><span>/</spa> &nbsp;<span class="language">RU</span>
+                        </div>
+                        <div class="head-nav_item">
+                            <a class="head-nav_item__social" href="#"><img src="img/head/hover-facebook.svg" alt="facebook"></a class="menu-nav_item__language">
+                            <a class="head-nav_item__social" href="#"><img src="img/head/hover-insta.svg" alt="insta"></a>
+                        </div>
+                        <div class="head-nav_item">
+
+                            <div class="head-nav_item__search">
+                                <img class="head-nav_item__search__img" src="img/head/search.svg" alt="search">
+                                <div class="head-nav_item__search__input"><input placeholder="Найти" type="search" name="" value=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- for screen <= 820px -->
+        <section class="burger" id="burger">
+            <a class="burgers-link" href="#menu"><span></span></a>
+            <div class="burgers">
+                <ul>
+                    <li><span class="language">EN &nbsp;</span><span>/</span> &nbsp;<span class="language">RU</span>
+                    </li>
+                    <li><a class="head-nav_item__collapsible mob">Каталог товаров <img
+                                class="head-nav_item__collapsible__arrow" src="img/head/arrow.svg" alt="arrow"></a>
+                        <div class="content">
+                            <div class="contents">
+                                <div class="contents-link-head">Спецодежда</div>
+                                <a href="" class="contents-link">Комбинезоны</a>
+                                <a href="" class="contents-link">Полукомбинезоны</a>
+                                <a href="" class="contents-link">Куртки</a>
+                                <a href="" class="contents-link">Халаты</a>
+                                <a href="" class="contents-link">Жилеты</a>
+                                <a href="" class="contents-link">Фартуки</a>
+                                <a href="" class="contents-link">Рубашки, спецовки</a>
+                                <a href="" class="contents-link">Штаны и брюки</a>
+                                <a href="" class="contents-link">Внутренняя одежда</a>
+                                <a href="" class="contents-link">Сигнальная одежда</a>
+                                <a href="" class="contents-link">Униформа</a>
+                            </div>
+                            <div class="contents">
+                                <div class="contents-link-head">Спецобувь</div>
+                                <a href="" class="contents-link">Ботинки рабочие</a>
+                                <a href="" class="contents-link">Сапоги рабочие</a>
+                                <a href="" class="contents-link">Сапоги резиновые</a>
+                                <a href="" class="contents-link">Шипы для обуви</a>
+                            </div>
+                            <div class="contents">
+                                <div class="contents-link-head">Средства защиты</div>
+                                <a href="" class="contents-link">Защита головы</a>
+                                <a href="" class="contents-link">Защита глаз и лица</a>
+                                <a href="" class="contents-link">Защита органов<br>дыхания</a>
+                                <a href="" class="contents-link">Защита органов<br>слуха</a>
+                                <a href="" class="contents-link">Защита от падения<br>с высоты</a>
+                                <a href="" class="contents-link">Набор защитного<br>оборудования</a>
+                            </div>
+                            <div class="contents">
+                                <div class="contents-link-head">Бренды</div>
+                                <a href="" class="contents-link">Albetr</a>
+                                <a href="" class="contents-link">Amyto</a>
+                                <a href="" class="contents-link">Antony Gill</a>
+                                <a href="" class="contents-link">Delta</a>
+                                <a href="" class="contents-link">Delta Plus</a>
+                                <a href="" class="contents-link">Dossi</a>
+                                <a href="" class="contents-link">Du Pont</a>
+                                <a href="" class="contents-link">FalkPit</a>
+                                <a href="" class="contents-link">Fanotek</a>
+                                <a href="" class="contents-link">FalkPit</a>
+                                <a href="" class="contents-link">Fanotek</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#delivery">Доставка</a></li>
+                    <li><a href="#us">О нас</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                    <li>
+                        <a class="head-nav_item__social" href="#"><img src="img/head/hover-facebook.svg"
+                                alt="facebook"></a class="menu-nav_item__language">
+                        <a class="head-nav_item__social insta" href="#"><img src="img/head/hover-insta.svg"
+                                alt="insta"></a>
+                    </li>
+                    <li>
+                        <input type="search" class="burger-input" placeholder="Найти">
+                        <button class="footer-item-button">ок</button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="page">
+            <div class="container-fluid">
+                <div class="pages">
+                    <div class="pages-item page-category">
+                        <div class="collapsible"><img class="collapsible-img" src="img/main/category-1.svg" alt=""> Спецодежда <img class="collapsible-arrow" src="img/main/category-arrow.svg" alt=""></div>
+                        <div class="item">
+                            <a href="" class="item-link">Одноразовая одежда</a>
+                            <a href="" class="item-link">Комбинезоны</a>
+                            <a href="" class="item-link">Полукомбинезоны</a>
+                            <a href="" class="item-link">Куртки</a>
+                            <a href="" class="item-link">Халаты</a>
+                            <a href="" class="item-link">Жилеты</a>
+                            <a href="" class="item-link">Фартуки</a>
+                            <a href="" class="item-link">Рубашки, спецовки</a>
+                            <a href="" class="item-link">Штаны и брюки</a>
+                            <a href="" class="item-link">Внутренняя одежда</a>
+                            <a href="" class="item-link">Сигнальная одежда</a>
+                            <a href="" class="item-link">Униформа</a>
+                        </div>
+
+                        <div class="collapsible" type=""><img class="collapsible-img" src="img/main/category-1.svg" alt=""> Спецобувь <img class="collapsible-arrow" src="img/main/category-arrow.svg" alt=""></div>
+                        <div class="item">
+                            <a href="" class="item-link">Комбинезоны</a>
+                            <a href="" class="item-link">Полукомбинезоны</a>
+                            <a href="" class="item-link">Куртки</a>
+                            <a href="" class="item-link">Халаты</a>
+                            <a href="" class="item-link">Жилеты</a>
+                            <a href="" class="item-link">Фартуки</a>
+                            <a href="" class="item-link">Рубашки, спецовки</a>
+                            <a href="" class="item-link">Штаны и брюки</a>
+                            <a href="" class="item-link">Внутренняя одежда</a>
+                            <a href="" class="item-link">Сигнальная одежда</a>
+                            <a href="" class="item-link">Униформа</a>
+                        </div>
+
+                        <div class="collapsible" type=""><img class="collapsible-img" src="img/main/category-1.svg" alt=""> Средства защиты<img class="collapsible-arrow" src="img/main/category-arrow.svg" alt=""></div>
+                        <div class="item">
+                            <a href="" class="item-link">Защита головы</a>
+                            <a href="" class="item-link">Защита глаз и лица</a>
+                            <a href="" class="item-link">Защита органов дыхания</a>
+                            <a href="" class="item-link">Защита органов слуха</a>
+                            <a href="" class="item-link">Защита от падения с высоты</a>
+                            <a href="" class="item-link">Набор защитного оборудования</a>
+                        </div>
+
+                        <div class="collapsible" type=""><img class="collapsible-img" src="img/main/category-1.svg" alt=""> Защита рук <img class="collapsible-arrow" src="img/main/category-arrow.svg" alt="arrow"></div>
+                        <div class="item">
+                            <a href="" class="item-link"></a>
+                            <a href="" class="item-link"></a>
+                            <a href="" class="item-link"></a>
+                            <a href="" class="item-link"></a>
+                            <a href="" class="item-link"></a>
+                            <a href="" class="item-link"></a>
+                        </div>
+
+                        <div class="collapsible last-child" type=""><img class="collapsible-img" src="img/main/category-1.svg" alt=""> По брендам <img class="collapsible-arrow" src="img/main/category-arrow.svg" alt=""></div>
+                        <div class="item">
+                            <a href="" class="item-link">Albetr</a>
+                            <a href="" class="item-link">Amyto</a>
+                            <a href="" class="item-link">Antony Gill</a>
+                            <a href="" class="item-link">Delta</a>
+                            <a href="" class="item-link">Delta Plus</a>
+                            <a href="" class="item-link">Dossi</a>
+                            <a href="" class="item-link">Du Pont</a>
+                            <a href="" class="item-link">FalkPit</a>
+                            <a href="" class="item-link">Fanotek</a>
+                            <a href="" class="item-link">FalkPit</a>
+                            <a href="" class="item-link">Fanotek</a>
+                        </div>
+                    </div>
+                    <div class="pages-item link">
+                        <a href="#" class="pages-item-nav">Главная </a> <span>/</span>
+                        <div class="section-category-name-title">Спецодежда</div>
+                        <div class="row">
+
+                            <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                                <div class="pages-item-card">
+                                   <a href="#">
+                                        <div class="pages-item-card_img"><img src="img/category/category-1.jpg" alt="img"></div>
+                                        <div class="pages-item-card_descr">Антистатические огнестойкие штаны-спецовки</div>
+                                   </a>
+                                </div>
+                            </div>
+                            
+                            <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                                <div class="pages-item-card">
+                                    <a href="#">
+                                        <div class="pages-item-card_img"><img src="img/category/category-3.jpg" alt="img"></div>
+                                        <div class="pages-item-card_descr">Антистатические огнестойкие штаны-спецовки</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                                <div class="pages-item-card">
+                                   <a href="#">
+                                        <div class="pages-item-card_img"><img src="img/category/category-3.jpg" alt="img"></div>
+                                        <div class="pages-item-card_descr">Антистатические огнестойкие штаны-спецовки</div>
+                                   </a>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                                <div class="pages-item-card">
+                                   <a href="#">
+                                        <div class="pages-item-card_img"><img src="img/category/category-4.jpg" alt="img"></div>
+                                        <div class="pages-item-card_descr">Антистатические огнестойкие штаны-спецовки</div>
+                                   </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                                <div class="pages-item-card">
+                                    <a href="#">
+                                        <div class="pages-item-card_img"><img src="img/category/category-5.jpg" alt="img"></div>
+                                        <div class="pages-item-card_descr">Антистатические огнестойкие штаны-спецовки</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                                <div class="pages-item-card">
+                                    <a href="#">
+                                        <div class="pages-item-card_img"><img src="img/category/category-6.jpg" alt="img"></div>
+                                        <div class="pages-item-card_descr">Антистатические огнестойкие штаны-спецовки</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                                <div class="pages-item-card">
+                                    <a href="#">
+                                        <div class="pages-item-card_img"><img src="img/category/category-7.jpg" alt="img"></div>
+                                        <div class="pages-item-card_descr">Антистатические огнестойкие штаны-спецовки</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                                <div class="pages-item-card">
+                                    <a href="#">
+                                        <div class="pages-item-card_img"><img src="img/category/category-8.jpg" alt="img"></div>
+                                        <div class="pages-item-card_descr">Антистатические огнестойкие штаны-спецовки</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                                <div class="pages-item-card">
+                                    <a href="#">
+                                        <div class="pages-item-card_img"><img src="img/category/category-9.jpg" alt="img"></div>
+                                        <div class="pages-item-card_descr">Антистатические огнестойкие штаны-спецовки</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                                <div class="pages-item-card">
+                                   <a href="#">
+                                        <div class="pages-item-card_img"><img src="img/category/category-10.jpg" alt="img"></div>
+                                        <div class="pages-item-card_descr">Антистатические огнестойкие штаны-спецовки</div>
+                                   </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                                <div class="pages-item-card">
+                                    <a href="#">
+                                        <div class="pages-item-card_img"><img src="img/category/category-11.jpg" alt="img"></div>
+                                        <div class="pages-item-card_descr">Антистатические огнестойкие штаны-спецовки</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="container">
+                <div class="contacts">
+                    <div class="contacts-title">Связаться с нами</div>
+                    <div class="contacts-subtitle">Если у вас возникли вопросы по поводу заказа — заполните форму ниже
+                        или свяжитесь с нами по указаным контактам</div>
+                    <form action="" class="form">
+                        <div class="row">
+                            <div class="col-12 col-md-12 col-lg-9">
+                                <div class="form-inputs">
+                                    <div class="form-item-input"><input class="form-input" placeholder="Ваш имя" type=""
+                                            name="" value=""></div>
+                                    <div class="form-item-input"><input class="form-input" placeholder="Ваше контакт"
+                                            type="" name="" value=""></div>
+                                    <div class="form-item-input"><textarea class="form-input message"
+                                            placeholder="Сообщение" type="" name="" value=""></textarea></div>
+                                    <button type="sumbit" class="form-button">Отправить</button>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-12 col-lg-3">
+                                <div class="form-item-descr">
+                                    <div class="form-item-descr_title">Email</div>
+                                    <div class="form-item-descr_link"><a href="#">info@integraway.com</a></div>
+                                </div>
+                                <div class="form-item-descr">
+                                    <div class="form-item-descr_title">Phone</div>
+                                    <div class="form-item-descr_link"><a href="#">600-430-0510</a></div>
+                                </div>
+
+                                <div class="form-item-descr">
+                                    <div class="form-item-descr_title">Social</div>
+                                    <div class="form-item-descr_link">
+                                        <a href="#"><img src="img/contact/hover-facebook.svg" alt="ison"></a>
+                                        <a href="#"><img src="img/contact/hover-insta.svg" alt="icon"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- for screen <= 992px -->
+        <section class="contact contact-lg">
+            <div class="container">
+                <div class="contacts">
+                    <div class="contacts-title">Связаться с нами</div>
+                    <div class="contacts-subtitle">Если у вас возникли вопросы по поводу заказа — заполните форму ниже
+                        или свяжитесь с нами по указаным контактам</div>
+                    <form action="" class="form">
+                        <div class="row">
+
+                            <div class="col-12 col-md-12 col-lg-3">
+                                <div class="form-item-descr">
+                                    <div class="form-item-descr_title">Email</div>
+                                    <div class="form-item-descr_link"><a href="#">info@integraway.com</a></div>
+                                </div>
+                                <div class="form-item-descr">
+                                    <div class="form-item-descr_title">Phone</div>
+                                    <div class="form-item-descr_link"><a href="#">600-430-0510</a></div>
+                                </div>
+
+                                <div class="form-item-descr">
+                                    <div class="form-item-descr_title">Social</div>
+                                    <div class="form-item-descr_link">
+                                        <a href="#"><img src="img/contact/hover-facebook.svg" alt="ison"></a>
+                                        <a href="#"><img src="img/contact/hover-insta.svg" alt="icon"></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-12 col-lg-9">
+                                <div class="form-inputs">
+                                    <div class="form-item-input"><input class="form-input" placeholder="Ваш имя" type=""
+                                            name="" value=""></div>
+                                    <div class="form-item-input"><input class="form-input" placeholder="Ваше контакт"
+                                            type="" name="" value=""></div>
+                                    <div class="form-item-input"><textarea class="form-input message"
+                                            placeholder="Сообщение" type="" name="" value=""></textarea></div>
+                                    <button type="sumbit" class="form-button">Отправить</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+         <section class="footer">
+             <div class="container-fluid">
+                 <div class="row">
+                     <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                         <div class="footer-item">
+                             <div class="footer-tem-logo"><img src="img/footer/logo.png" alt="logo"></div>
+                             <div class="footer-item-text">integraway.com &copy; 2012-2020</div>
+                         </div>
+                     </div>
+                     <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                         <div class="footer-item">
+                             <a href="#" class="footer-item-link">О нас</a>
+                             <a href="#" class="footer-item-link">Инфо о доставке</a>
+                             <a href="#" class="footer-item-link">Карта сайта</a>
+                             <a href="#" class="footer-item-link">Возврат товара</a>
+                         </div>
+                     </div>
+                     <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                         <div class="footer-item">
+                             <a href="#" class="footer-item-link">Прайс лист</a>
+                             <a href="#" class="footer-item-link">Карта сайта</a>
+                             <a href="#" class="footer-item-link">Возврат товара</a>
+                         </div>
+                     </div>
+                     <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                         <div class="footer-item">
+                             <div class="footer-item-title">Поиск по сайту</div>
+                             <input type="text" class="footer-item-input" placeholder="Найти">
+                             <button class="footer-item-button">ок</button>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </section>
+
+         <!-- for screen <= 576px -->
+         <section class="footer footer-sm">
+             <div class="container-fluid">
+                 <div class="footers">
+                     <div class="row">
+
+                         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                             <div class="footer-item">
+                                 <a href="#" class="footer-item-link">О нас</a>
+                                 <a href="#" class="footer-item-link">Инфо о доставке</a>
+                                 <a href="#" class="footer-item-link">Карта сайта</a>
+                                 <a href="#" class="footer-item-link">Возврат товара</a>
+                                 <a href="#" class="footer-item-link">Прайс лист</a>
+                                 <a href="#" class="footer-item-link">Карта сайта</a>
+                                 <a href="#" class="footer-item-link">Возврат товара</a>
+                             </div>
+                         </div>
+
+                         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                             <div class="footer-item">
+                                 <div class="footer-item-title">Поиск по сайту</div>
+                                 <input type="text" class="footer-item-input" placeholder="Найти">
+                                 <button class="footer-item-button">ок</button>
+                             </div>
+                         </div>
+
+                         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                             <div class="footer-item">
+                                 <div class="footer-tem-logo"><img src="img/footer/logo.png" alt="logo"></div>
+                                 <div class="footer-item-text">integraway.com &copy; 2012-2020</div>
+                             </div>
+                         </div>
+
+                     </div>
+                 </div>
+             </div>
+         </section>
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+        <script src="slick/slick.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="js/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+        <script src="js/script.js"></script>
+    </body>
+</html>

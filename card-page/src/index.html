@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content= />
+        <meta name="author" content= />
+        <link rel="stylesheet" href="css/animate.min.css">
+        <link rel="stylesheet" href="css/hover-min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700&display=swap&subset=cyrillic" rel="stylesheet">
+        <link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="slick/slick.css">
+        <link rel="stylesheet" href="slick/slick-theme.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>" type="text/javascript"></script>
+        <title>CardPage</title>
+    </head>
+    <body>
+
+        <section class="head">
+            <div class="container-fluid">
+                <div class="head-item">
+                    <div class="head-item_logo"><a href="#"><img src="img/head/logo.png" alt="logo"></a></div>
+                    <div class="head-nav">
+                        <div class="head-nav_item">
+                            <a class="head-nav_item__collapsible">Каталог товаров <img class="head-nav_item__collapsible__arrow" src="img/head/arrow.svg" alt="arrow"></a>
+                            <div class="content">
+                                <div class="contents">
+                                    <div class="contents-link-head">Спецодежда</div>
+                                    <a href="" class="contents-link">Комбинезоны</a>
+                                    <a href="" class="contents-link">Полукомбинезоны</a>
+                                    <a href="" class="contents-link">Куртки</a>
+                                    <a href="" class="contents-link">Халаты</a>
+                                    <a href="" class="contents-link">Жилеты</a>
+                                    <a href="" class="contents-link">Фартуки</a>
+                                    <a href="" class="contents-link">Рубашки, спецовки</a>
+                                    <a href="" class="contents-link">Штаны и брюки</a>
+                                    <a href="" class="contents-link">Внутренняя одежда</a>
+                                    <a href="" class="contents-link">Сигнальная одежда</a>
+                                    <a href="" class="contents-link">Униформа</a>
+                                </div>
+                                <div class="contents">
+                                    <div class="contents-link-head">Спецобувь</div>
+                                    <a href="" class="contents-link">Ботинки рабочие</a>
+                                    <a href="" class="contents-link">Сапоги рабочие</a>
+                                    <a href="" class="contents-link">Сапоги резиновые</a>
+                                    <a href="" class="contents-link">Шипы для обуви</a>
+                                </div>
+                                <div class="contents">
+                                    <div class="contents-link-head">Средства защиты</div>
+                                    <a href="" class="contents-link">Защита головы</a>
+                                    <a href="" class="contents-link">Защита глаз и лица</a>
+                                    <a href="" class="contents-link">Защита органов<br>дыхания</a>
+                                    <a href="" class="contents-link">Защита органов<br>слуха</a>
+                                    <a href="" class="contents-link">Защита от падения<br>с высоты</a>
+                                    <a href="" class="contents-link">Набор защитного<br>оборудования</a>
+                                </div>
+                                <div class="contents">
+                                    <div class="contents-link-head">Бренды</div>
+                                    <a href="" class="contents-link">Albetr</a>
+                                    <a href="" class="contents-link">Amyto</a>
+                                    <a href="" class="contents-link">Antony Gill</a>
+                                    <a href="" class="contents-link">Delta</a>
+                                    <a href="" class="contents-link">Delta Plus</a>
+                                    <a href="" class="contents-link">Dossi</a>
+                                    <a href="" class="contents-link">Du Pont</a>
+                                    <a href="" class="contents-link">FalkPit</a>
+                                    <a href="" class="contents-link">Fanotek</a>
+                                    <a href="" class="contents-link">FalkPit</a>
+                                    <a href="" class="contents-link">Fanotek</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="head-nav_item"><a href="#">Доставка</a></div>
+                        <div class="head-nav_item"><a href="#">О нас</a></div>
+                        <div class="head-nav_item"><a href="#">Контакты</a></div>
+                        <div class="head-nav_item">
+                            <span class="language">EN &nbsp;</span><span>/</spa> &nbsp;<span class="language">RU</span>
+                        </div>
+                        <div class="head-nav_item">
+                            <a class="head-nav_item__social" href="#"><img src="img/head/hover-facebook.svg" alt="facebook"></a class="menu-nav_item__language">
+                            <a class="head-nav_item__social" href="#"><img src="img/head/hover-insta.svg" alt="insta"></a>
+                        </div>
+                        <div class="head-nav_item">
+
+                            <div class="head-nav_item__search">
+                                <img class="head-nav_item__search__img" src="img/head/search.svg" alt="search">
+                                <div class="head-nav_item__search__input"><input placeholder="Найти" type="search" name="" value=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="burger" id="burger">
+            <a class="burgers-link" href="#menu"><span></span></a>
+            <div class="burgers">
+                <ul>
+                    <li><span class="language">EN &nbsp;</span><span>/</span> &nbsp;<span class="language">RU</span></li>
+                    <li><a class="head-nav_item__collapsible mob">Каталог товаров <img class="head-nav_item__collapsible__arrow" src="img/head/arrow.svg" alt="arrow"></a>
+                        <div class="content">
+                            <div class="contents">
+                                <div class="contents-link-head">Спецодежда</div>
+                                <a href="" class="contents-link">Комбинезоны</a>
+                                <a href="" class="contents-link">Полукомбинезоны</a>
+                                <a href="" class="contents-link">Куртки</a>
+                                <a href="" class="contents-link">Халаты</a>
+                                <a href="" class="contents-link">Жилеты</a>
+                                <a href="" class="contents-link">Фартуки</a>
+                                <a href="" class="contents-link">Рубашки, спецовки</a>
+                                <a href="" class="contents-link">Штаны и брюки</a>
+                                <a href="" class="contents-link">Внутренняя одежда</a>
+                                <a href="" class="contents-link">Сигнальная одежда</a>
+                                <a href="" class="contents-link">Униформа</a>
+                            </div>
+                            <div class="contents">
+                                <div class="contents-link-head">Спецобувь</div>
+                                <a href="" class="contents-link">Ботинки рабочие</a>
+                                <a href="" class="contents-link">Сапоги рабочие</a>
+                                <a href="" class="contents-link">Сапоги резиновые</a>
+                                <a href="" class="contents-link">Шипы для обуви</a>
+                            </div>
+                            <div class="contents">
+                                <div class="contents-link-head">Средства защиты</div>
+                                <a href="" class="contents-link">Защита головы</a>
+                                <a href="" class="contents-link">Защита глаз и лица</a>
+                                <a href="" class="contents-link">Защита органов<br>дыхания</a>
+                                <a href="" class="contents-link">Защита органов<br>слуха</a>
+                                <a href="" class="contents-link">Защита от падения<br>с высоты</a>
+                                <a href="" class="contents-link">Набор защитного<br>оборудования</a>
+                            </div>
+                            <div class="contents">
+                                <div class="contents-link-head">Бренды</div>
+                                <a href="" class="contents-link">Albetr</a>
+                                <a href="" class="contents-link">Amyto</a>
+                                <a href="" class="contents-link">Antony Gill</a>
+                                <a href="" class="contents-link">Delta</a>
+                                <a href="" class="contents-link">Delta Plus</a>
+                                <a href="" class="contents-link">Dossi</a>
+                                <a href="" class="contents-link">Du Pont</a>
+                                <a href="" class="contents-link">FalkPit</a>
+                                <a href="" class="contents-link">Fanotek</a>
+                                <a href="" class="contents-link">FalkPit</a>
+                                <a href="" class="contents-link">Fanotek</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#delivery">Доставка</a></li>
+                    <li><a href="#us">О нас</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                    <li> 
+                        <a class="head-nav_item__social" href="#"><img src="img/head/hover-facebook.svg" alt="facebook"></a class="menu-nav_item__language">
+                        <a class="head-nav_item__social insta" href="#"><img src="img/head/hover-insta.svg" alt="insta"></a>
+                    </li>
+                    <li>
+                        <input type="search" class="burger-input" placeholder="Найти">
+                        <button class="footer-item-button">ок</button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="cart">
+            <div class="container-fluid">
+                <div class="carts">
+                    <div class="row">
+                        <div class="col-6 ">
+                            <div class="slider">
+                                <div class="slider2">
+                                    <div class="slider2-item">
+                                        <div class="slider2-item_img">
+                                            <img src="img/card/slider-nav-1.png" alt="IMGSM-2">
+                                        </div>
+                                    </div>
+                                    <div class="slider2-item">
+                                        <div class="slider2-item_img">
+                                            <img src="img/card/slider-nav-1.png" alt="IMGSM-2">
+                                        </div>
+                                    </div>
+                                    <div class="slider2-item">
+                                        <div class="slider2-item_img">
+                                            <img src="img/card/slider-nav-1.png" alt="IMGSM-2">
+                                        </div>
+                                    </div>
+                                    <div class="slider2-item">
+                                        <div class="slider2-item_img">
+                                            <img src="img/card/slider-nav-1.png" alt="IMGSM-2">
+                                        </div>
+                                    </div>
+                                    <div class="slider2-item">
+                                        <div class="slider2-item_img">
+                                            <img src="img/card/slider-nav-1.png" alt="IMGSM-2">
+                                        </div>
+                                    </div>
+                                    <div class="slider2-item">
+                                        <div class="slider2-item_img">
+                                            <img src="img/card/slider-nav-1.png" alt="IMGSM-2">
+                                        </div>
+                                    </div>
+                                    <div class="slider2-item">
+                                        <div class="slider2-item_img">
+                                            <img src="img/card/slider-nav-1.png" alt="IMGSM-2">
+                                        </div>
+                                    </div>
+                                    <div class="slider2-item">
+                                        <div class="slider2-item_img">
+                                            <img src="img/card/slider-nav-1.png" alt="IMGSM-2">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="slider1">
+                                    <div class="slider1-item">
+                                        <div class="slider1-item_img"><img src="img/card/slider-one-1.png" alt="IMG-1">
+                                        </div>
+                                    </div>
+                                    <div class="slider1-item">
+                                        <div class="slider1-item_img"><img src="img/card/slider-one-1.png" alt="IMG-2"></div>
+                                    </div>
+                                    <div class="slider1-item">
+                                        <div class="slider1-item_img"><img src="img/card/slider-one-1.png" alt="IMG-3"></div>
+                                    </div>
+                                    <div class="slider1-item">
+                                        <div class="slider1-item_img"><img src="img/card/slider-one-1.png" alt="IMG-4"></div>
+                                    </div>
+                                    <div class="slider1-item">
+                                        <div class="slider1-item_img"><img src="img/card/slider-one-1.png" alt="IMG-5"></div>
+                                    </div>
+                                    <div class="slider1-item">
+                                        <div class="slider1-item_img">
+                                            <img src="img/card/slider-one-1.png" alt="IMG-6">
+                                        </div>
+                                    </div>
+                                    <div class="slider1-item">
+                                        <div class="slider1-item_img"><img src="img/card/slider-one-1.png" alt="IMG-7"></div>
+                                    </div>
+                                    <div class="slider1-item">
+                                        <div class="slider1-item_img"><img src="img/card/slider-one-1.png" alt="IMG-8"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 ">
+                            <div class="info">
+                                <a href="#" class="section-categories-link">Главная</a> <span>/</span>
+                                <a href="#" class="section-subcategories-link">Полукомбинезоны</a> <span>/</span>
+                                <div class="section-cart-title">Антистатические огнестойкие штаны-спецовки (модакрил, хлопок) Antony Gill8494</div>
+                                <div class="section-cart-manufacturer">Производитель: <span>Ansell</span></div>
+                                <div class="section-cart-vendor">Артикул: <span>BI0004</span></div>
+                                <div class="section-cart-order">Минимальный заказ: <span>5000</span></div>
+                                
+                                <div class="section-cart-price">Цена: <span>&#36;2.00 - &#36;3.00</span></div>
+                                <button class="section-cart-button">Запрос</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- for screen <= 820px -->
+        <section class="cart cart-md">
+            <div class="container-fluid">
+                <div class="carts">
+
+                    <div class="info">
+                        <a href="#" class="section-categories-link">Главная</a> <span>/</span>
+                        <a href="#" class="section-subcategories-link">Полукомбинезоны</a> <span>/</span>
+                        <div class="section-cart-title">Антистатические огнестойкие штаны-спецовки (модакрил, хлопок) Antony Gill8494</div>
+                    </div>
+
+                    <div class="slider1">
+                        <div class="slider1-item">
+                            <div class="slider1-item_img"><img src="img/card/slider-one-1.png" alt="IMG-1"></div>
+                        </div>
+                        <div class="slider1-item">
+                            <div class="slider1-item_img"><img src="img/card/slider-one-1.png" alt="IMG-2"></div>
+                        </div>
+                        <div class="slider1-item">
+                            <div class="slider1-item_img"><img src="img/card/slider-one-1.png" alt="IMG-3"></div>
+                        </div>
+                        <div class="slider1-item">
+                            <div class="slider1-item_img"><img src="img/card/slider-one-1.png" alt="IMG-4"></div>
+                        </div>
+                        <div class="slider1-item">
+                            <div class="slider1-item_img"><img src="img/card/slider-one-1.png" alt="IMG-5"></div>
+                        </div>
+                        <div class="slider1-item">
+                            <div class="slider1-item_img"><img src="img/card/slider-one-1.png" alt="IMG-6"></div>
+                        </div>
+                        <div class="slider1-item">
+                            <div class="slider1-item_img"><img src="img/card/slider-one-1.png" alt="IMG-7"></div>
+                        </div>
+                        <div class="slider1-item">
+                            <div class="slider1-item_img"><img src="img/card/slider-one-1.png" alt="IMG-8"></div>
+                        </div>
+                    </div>
+
+                    <div class="info">
+                        <div class="section-cart-manufacturer">Производитель: <span>Ansell</span></div>
+                        <div class="section-cart-vendor">Артикул: <span>BI0004</span></div>
+                        <div class="section-cart-order">Минимальный заказ: <span>5000</span></div>
+    
+                        <div class="section-cart-price">Цена: <span>&#36;2.00 - &#36;3.00</span></div>
+                        <button class="section-cart-button">Запрос</button>
+                    </div>
+
+                </div>  
+            </div>
+        </section>
+
+        <section class="information">
+            <div class="scoreboard">
+                <div class="container-fluid">
+                    <div class="scoreboardes">
+                        <div class="scoreboardes-item">
+                            <div class="scoreboardes-item-name">Описание</div>
+                            <img class="scoreboardes-item-img" src="img/information/Triangle.svg" alt="img">
+                        </div>
+                        <div class="scoreboardes-item">
+                            <div class="scoreboardes-item-name">Характеристики</div>
+                            <img class="scoreboardes-item-img" src="img/information/Triangle.svg" alt="img">
+                        </div>
+                        <div class="scoreboardes-item">
+                            <div class="scoreboardes-item-name">Информация о заказе</div>
+                            <img class="scoreboardes-item-img" src="img/information/Triangle.svg" alt="img">
+                        </div>
+                    </div>
+                    <!-- /.scoreboardes -->
+                </div>
+                <!-- /.container-fluid -->
+            </div>
+            <!-- /.scoreboard -->
+            <div class="container-fluid">
+                <div class="row">
+
+                    <div class="col-9">
+                        <!-- DESCRIPTIONS -->
+                        <div class="descr">
+                            <div class="descr-item">Эти штаны соответствуют всем европейским стандартам. Огнестойкие рабочие брюки имеют не только хорошую защиту от огня, но и карманы, в которые вы можете положитьвсе, что угодно. Огнестойкие штаны оптом намного выгодней покупать, чем в розницу. Фирма-производитель данных штанов гарантирует отличное качество ткани.</div>
+                            <div class="descr-item">Какими же характеристиками обладают огнестойкие рабочие брюки? Такая одежда способна защитить вас от огня, так как она на 100% состоит из хлопка огнезащитной ткани. В них вы будете чувствовать себя комфортно.Огнестойкие штаны купить можно без проблем: для этого следует оформить заказ.</div>
+                            <div class="descr-item">Эти штаны соответствуют всем европейским стандартам. Огнестойкие рабочие брюки имеют не только хорошую защиту от огня, но и карманы, в которые вы можете положить все, что угодно. Огнестойкие штаны оптом намного выгодней покупать, чем в розницу. Фирма-производитель данных штанов гарантирует отличное качество ткани.<span>Читать далее ↓</span></div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="buy">
+                            <div class="buy-title">С этим покупают</div>
+                            <div class="buy-card card-one">
+                                <div class="buy-card-img"><img src="img/information/image 48.svg" alt="img"></div>
+                                <div class="buy-card-text">100% хлопковые летние полукомбинезоны Antony Gill8510
+                                </div>
+                            </div>
+                            <div class="buy-card">
+                                <div class="buy-card-img"><img src="img/information/image 58.svg" alt="img"></div>
+                                <div class="buy-card-text">100% хлопковые летние полукомбинезоны Antony Gill8510
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- PARAMS -->
+                    <div class="col-12">
+                        <div class="param">
+                            <div class="param-item">Эти штаны соответствуют всем европейским стандартам. Огнестойкие
+                                рабочие брюки имеют не только хорошую защиту от огня, но и карманы, в которые вы можете
+                                положитьвсе, что угодно. Огнестойкие штаны оптом намного выгодней покупать, чем в
+                                розницу. Фирма-производитель данных штанов гарантирует отличное качество ткани.</div>
+                            <div class="params">
+                                <div class="params-title">Характеристики:</div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="params-key">Размер</div>
+                                        <div class="params-key">Цвет</div>
+                                        <div class="params-key">Материал</div>
+                                        <div class="params-key">Износостойкость</div>
+                                        <div class="params-key">Размер</div>
+                                        <div class="params-key">Цвет</div>
+                                        <div class="params-key">Материал</div>
+                                        <div class="params-key">Количество карманов</div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="params-value">42</div>
+                                        <div class="params-value">Синий, Белый, Коричневый</div>
+                                        <div class="params-value">Хлопок</div>
+                                        <div class="params-value">Повышеная</div>
+                                        <div class="params-value">Взрослый</div>
+                                        <div class="params-value">Синий</div>
+                                        <div class="params-value">Лен</div>
+                                        <div class="params-value">Неограниченное</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- for screen <= 845px
+                            <div class="params">
+                                <div class="params-title">Характеристики:</div>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <div class="params-key">Размер</div>
+                                        <div class="params-key">Цвет</div>
+                                        <div class="params-key">Материал</div>
+                                        <div class="params-key">Износостойкость</div>
+                                        <div class="params-key">Размер</div>
+                                        <div class="params-key">Цвет</div>
+                                        <div class="params-key">Материал</div>
+                                        <div class="params-key">Количество карманов</div>
+                                    </div>
+                                    <div class="col-5">
+                                        <div class="params-value">42</div>
+                                        <div class="params-value">Синий, Белый, Коричневый</div>
+                                        <div class="params-value">Хлопок</div>
+                                        <div class="params-value">Повышеная</div>
+                                        <div class="params-value">Взрослый</div>
+                                        <div class="params-value">Синий</div>
+                                        <div class="params-value">Лен</div>
+                                        <div class="params-value">Неограниченное</div>
+                                    </div>
+                                </div>
+                            </div> -->
+
+                            
+                            <div class="param-item">Какими же характеристиками обладают огнестойкие рабочие брюки? Такая
+                                одежда способна защитить вас от огня, так как она на 100% состоит из хлопка огнезащитной
+                                ткани. В них вы будете чувствовать себя комфортно.Огнестойкие штаны купить можно без
+                                проблем: для этого следует оформить заказ.</div>
+                            <div class="param-item">Эти штаны соответствуют всем европейским стандартам. Огнестойкие
+                                рабочие брюки имеют не только хорошую защиту от огня, но и карманы, в которые вы можете
+                                положить все, что угодно. Огнестойкие штаны оптом намного выгодней покупать, чем в
+                                розницу. Фирма-производитель данных штанов гарантирует отличное качество
+                                ткани.<span>Читать далее ↓</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="category">
+            <div class="container-fluid">
+                <div class="section-category-name">
+                    <div class="section-category-name-title"><a href="#">Похожие товары</a></div>
+                </div>
+                <div class="categories">
+                    <div class="row">
+                        <div class="col-6 col-sm-6 col-md-4 col-xl-3">
+                            <div class="categories-card">
+                                <div class="categories-card-img"><a href="#"><img src="img/category/category-9.jpg"alt="img"></a></div>
+                                <div class="categories-card-descr descriptions"><a href="#">Антистатические огнестойкие штаны-спецовки (модакрил, хлопок) Antony Gill8494</a></div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-sm-6 col-md-4 col-xl-3">
+                            <div class="categories-card">
+                                <div class="categories-card-img"><a href="#"><img src="img/category/category-10.jpg"alt="img"></a></div>
+                                <div class="categories-card-descr descriptions"><a href="#">Полукомбинезон - 65% полиэстер 35% хлопок 245 г/м MCSAL PANOPLY</a></div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-sm-6 col-md-4 col-xl-3">
+                            <div class="categories-card">
+                                <div class="categories-card-img"><a href="#"><img src="img/category/category-11.jpg"alt="img"></a></div>
+                                <div class="categories-card-descr descriptions"><a href="#">100% хлопковые летние полукомбинезоны Antony Gill8510</a></div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-sm-6 col-md-4 col-xl-3">
+                            <div class="categories-card">
+                                <div class="categories-card-img"><a href="#"><img src="img/category/category-12.jpg"alt="img"></a></div>
+                                <div class="categories-card-descr descriptions"><a href="#">Полукомбинезон - 65% полиэстер 35% хлопок 245 г/м MCSAL PANOPLY</a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-category-name">
+                        <div class="section-category-name-title"><a href="#">Рекомендации</a></div>
+                    </div>
+                    <div class="categories">
+                        <div class="row">
+                            <div class="col-6 col-sm-6 col-md-4 col-xl-3">
+                                <div class="categories-card">
+                                    <div class="categories-card-img"><a href="#"><img src="img/category/category-9.jpg"alt="img"></a></div>
+                                    <div class="categories-card-descr descriptions"><a href="#">Антистатические огнестойкие штаны-спецовки (модакрил, хлопок) Antony Gill8494</a></div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-sm-6 col-md-4 col-xl-3">
+                                <div class="categories-card">
+                                    <div class="categories-card-img"><a href="#"><img src="img/category/category-10.jpg"alt="img"></a></div>
+                                    <div class="categories-card-descr descriptions"><a href="#">Полукомбинезон - 65% полиэстер 35% хлопок 245 г/м MCSAL PANOPLY</a></div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-sm-6 col-md-4 col-xl-3">
+                                <div class="categories-card">
+                                    <div class="categories-card-img"><a href="#"><img src="img/category/category-11.jpg"alt="img"></a></div>
+                                    <div class="categories-card-descr descriptions"><a href="#">100% хлопковые летние полукомбинезоны Antony Gill8510</a></div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-sm-6 col-md-4 col-xl-3">
+                                <div class="categories-card">
+                                    <div class="categories-card-img"><a href="#"><img src="img/category/category-12.jpg"alt="img"></a></div>
+                                    <div class="categories-card-descr descriptions"><a href="#">Полукомбинезон - 65% полиэстер 35% хлопок 245 г/м MCSAL PANOPLY</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </section>
+
+        <section class="category category-card">
+            <div class="container-fluid">
+                <div class="section-category-name">
+                    <div class="section-category-name-title"><a href="#">Похожие товары</a></div>
+                </div>
+                <div class="categories">
+                    <div class="row">
+                        <div class="col-6 col-sm-6 col-md-4 col-xl-3">
+                            <div class="categories-card">
+                                <div class="categories-card-img"><a href="#"><img src="img/category/category-9.jpg"
+                                            alt="img"></a></div>
+                                <div class="categories-card-descr descriptions"><a href="#">Антистатические огнестойкие
+                                        штаны-спецовки (модакрил, хлопок) Antony Gill8494</a></div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-sm-6 col-md-4 col-xl-3">
+                            <div class="categories-card">
+                                <div class="categories-card-img"><a href="#"><img src="img/category/category-10.jpg"
+                                            alt="img"></a></div>
+                                <div class="categories-card-descr descriptions"><a href="#">Полукомбинезон - 65%
+                                        полиэстер 35% хлопок 245 г/м MCSAL PANOPLY</a></div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-sm-6 col-md-4 col-xl-3">
+                            <div class="categories-card">
+                                <div class="categories-card-img"><a href="#"><img src="img/category/category-11.jpg"
+                                            alt="img"></a></div>
+                                <div class="categories-card-descr descriptions"><a href="#">100% хлопковые летние
+                                        полукомбинезоны Antony Gill8510</a></div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-sm-6 col-md-4 col-xl-3">
+                            <div class="categories-card">
+                                <div class="categories-card-img"><a href="#"><img src="img/category/category-12.jpg"
+                                            alt="img"></a></div>
+                                <div class="categories-card-descr descriptions"><a href="#">Полукомбинезон - 65%
+                                        полиэстер 35% хлопок 245 г/м MCSAL PANOPLY</a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-category-name">
+                        <div class="section-category-name-title"><a href="#">Рекомендации</a></div>
+                    </div>
+                    <div class="categories">
+                        <div class="row">
+                            <div class="col-6 col-sm-6 col-md-4 col-xl-3">
+                                <div class="categories-card">
+                                    <div class="categories-card-img"><a href="#"><img src="img/category/category-9.jpg"
+                                                alt="img"></a></div>
+                                    <div class="categories-card-descr descriptions"><a href="#">Антистатические
+                                            огнестойкие штаны-спецовки (модакрил, хлопок) Antony Gill8494</a></div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-sm-6 col-md-4 col-xl-3">
+                                <div class="categories-card">
+                                    <div class="categories-card-img"><a href="#"><img src="img/category/category-10.jpg"
+                                                alt="img"></a></div>
+                                    <div class="categories-card-descr descriptions"><a href="#">Полукомбинезон - 65%
+                                            полиэстер 35% хлопок 245 г/м MCSAL PANOPLY</a></div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-sm-6 col-md-4 col-xl-3">
+                                <div class="categories-card">
+                                    <div class="categories-card-img"><a href="#"><img src="img/category/category-11.jpg"
+                                                alt="img"></a></div>
+                                    <div class="categories-card-descr descriptions"><a href="#">100% хлопковые летние
+                                            полукомбинезоны Antony Gill8510</a></div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-sm-6 col-md-4 col-xl-3">
+                                <div class="categories-card">
+                                    <div class="categories-card-img"><a href="#"><img src="img/category/category-12.jpg"
+                                                alt="img"></a></div>
+                                    <div class="categories-card-descr descriptions"><a href="#">Полукомбинезон - 65%
+                                            полиэстер 35% хлопок 245 г/м MCSAL PANOPLY</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="container">
+                <div class="contacts">
+                    <div class="contacts-title">Связаться с нами</div>
+                    <div class="contacts-subtitle">Если у вас возникли вопросы по поводу заказа — заполните форму ниже или свяжитесь с нами по указаным контактам</div>
+                    <form action="" class="form">
+                        <div class="row">
+                            <div class="col-12 col-md-12 col-lg-9">
+                                <div class="form-inputs">
+                                    <div class="form-item-input"><input class="form-input" placeholder="Ваш имя" type="" name="" value=""></div> 
+                                    <div class="form-item-input"><input class="form-input" placeholder="Ваше контакт" type="" name="" value=""></div>
+                                    <div class="form-item-input"><textarea class="form-input message" placeholder="Сообщение" type="" name="" value=""></textarea></div>
+                                    <button type="sumbit" class="form-button">Отправить</button>
+                                </div>
+                            </div>
+                            
+                            <div class="col-12 col-md-12 col-lg-3">
+                                <div class="form-item-descr">
+                                    <div class="form-item-descr_title">Email</div>
+                                    <div class="form-item-descr_link"><a href="#">info@integraway.com</a></div>
+                                </div>
+                                <div class="form-item-descr">
+                                    <div class="form-item-descr_title">Phone</div>
+                                    <div class="form-item-descr_link"><a href="#">600-430-0510</a></div>
+                                </div>
+        
+                                <div class="form-item-descr">
+                                    <div class="form-item-descr_title">Social</div>
+                                    <div class="form-item-descr_link">
+                                        <a href="#"><img src="img/contact/hover-facebook.svg" alt="ison"></a>
+                                        <a href="#"><img src="img/contact/hover-insta.svg" alt="icon"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>          
+                </div>       
+            </div>
+        </section>
+
+        <!-- for screen <= 992px -->
+        <section class="contact contact-lg">
+            <div class="container">
+                <div class="contacts">
+                    <div class="contacts-title">Связаться с нами</div>
+                    <div class="contacts-subtitle">Если у вас возникли вопросы по поводу заказа — заполните форму ниже или свяжитесь с нами по указаным контактам</div>
+                    <form action="" class="form">
+                         <div class="row">
+
+                            <div class="col-12 col-md-12 col-lg-3">
+                                <div class="form-item-descr">
+                                    <div class="form-item-descr_title">Email</div>
+                                    <div class="form-item-descr_link"><a href="#">info@integraway.com</a></div>
+                                </div>
+                                <div class="form-item-descr">
+                                    <div class="form-item-descr_title">Phone</div>
+                                    <div class="form-item-descr_link"><a href="#">600-430-0510</a></div>
+                                </div>
+
+                                <div class="form-item-descr">
+                                    <div class="form-item-descr_title">Social</div>
+                                    <div class="form-item-descr_link">
+                                        <a href="#"><img src="img/contact/hover-facebook.svg" alt="ison"></a>
+                                        <a href="#"><img src="img/contact/hover-insta.svg" alt="icon"></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-12 col-lg-9">
+                                <div class="form-inputs">
+                                    <div class="form-item-input"><input class="form-input" placeholder="Ваш имя" type="" name="" value=""></div>
+                                    <div class="form-item-input"><input class="form-input" placeholder="Ваше контакт" type="" name="" value=""></div>
+                                    <div class="form-item-input"><textarea class="form-input message" placeholder="Сообщение" type="" name="" value=""></textarea></div>
+                                    <button type="sumbit" class="form-button">Отправить</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="footer-item">
+                            <div class="footer-tem-logo"><img src="img/footer/logo.png" alt="logo"></div>
+                            <div class="footer-item-text">integraway.com &copy; 2012-2020</div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="footer-item">
+                            <a href="#" class="footer-item-link">О нас</a>
+                            <a href="#" class="footer-item-link">Инфо о доставке</a>
+                            <a href="#" class="footer-item-link">Карта сайта</a>
+                            <a href="#" class="footer-item-link">Возврат товара</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="footer-item">
+                            <a href="#" class="footer-item-link">Прайс лист</a>
+                            <a href="#" class="footer-item-link">Карта сайта</a>
+                            <a href="#" class="footer-item-link">Возврат товара</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="footer-item">
+                            <div class="footer-item-title">Поиск по сайту</div>
+                            <input type="text" class="footer-item-input" placeholder="Найти">
+                            <button class="footer-item-button">ок</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- for screen <= 576px -->
+        <section class="footer footer-sm">
+            <div class="container-fluid">
+                <div class="footers">
+                    <div class="row">
+
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="footer-item">
+                                <a href="#" class="footer-item-link">О нас</a>
+                                <a href="#" class="footer-item-link">Инфо о доставке</a>
+                                <a href="#" class="footer-item-link">Карта сайта</a>
+                                <a href="#" class="footer-item-link">Возврат товара</a>
+                                <a href="#" class="footer-item-link">Прайс лист</a>
+                                <a href="#" class="footer-item-link">Карта сайта</a>
+                                <a href="#" class="footer-item-link">Возврат товара</a>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="footer-item">
+                                <div class="footer-item-title">Поиск по сайту</div>
+                                <input type="text" class="footer-item-input" placeholder="Найти">
+                                <button class="footer-item-button">ок</button>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="footer-item">
+                                <div class="footer-tem-logo"><img src="img/footer/logo.png" alt="logo"></div>
+                                <div class="footer-item-text">integraway.com &copy; 2012-2020</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+        <script src="slick/slick.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="js/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+        <script src="js/script.js"></script>
+    </body>
+</html>

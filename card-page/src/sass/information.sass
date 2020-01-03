@@ -1,0 +1,112 @@
+@import 'variables.sass'
+
+.information 
+    background-color: $bacground-color
+.scoreboard 
+    padding-top: 24px
+    padding-bottom: 24px
+    border-top: 1px solid $category-border-color
+    border-bottom: 1px solid $category-border-color
+    &es
+        display: flex   
+        align-items: center 
+        justify-content: flex-start
+        &-item 
+            margin-right: 59px
+            font-size: 18px
+            line-height: 23px
+            color: $notActive-color
+            position: relative
+            &-img 
+                display: none
+                position: absolute 
+                top: 47px
+                left: 50%
+                transform: translateX(-50%)
+.descr
+    padding-top: 37px
+    &-item
+        padding-bottom: 30px
+        font-size: 16px
+        line-height: 24px
+        color: $menu-head-link-color
+        span 
+            font-size: 16px
+            font-weight: 700
+            letter-spacing: 0.5px
+.params 
+    display: block
+    padding-bottom: 20px
+    &-title
+        padding-bottom: 24px
+        font-size: 17px
+        font-weight: 600
+        line-height: 24px
+        color: $menu-head-link-color
+    &-key
+        padding-bottom: 20px
+        min-height: 68px
+    //    &::after 
+    //        margin-top: 10px
+    //        margin-bottom: 10px
+    //        content: ''
+    //        display: block
+    //        width: 870px
+    //        height: 1px
+    //        background-color: $category-border-color
+    &-value 
+        padding-bottom: 20px
+        min-height: 68px
+
+.buy 
+    padding-top: 37px
+    padding-bottom: 60px
+    &-title
+        padding-bottom: 31px
+        font-size: 24px
+        line-height: 29px
+        color: $menu-head-link-color
+    &-card 
+        background-color: #fff
+        display: flex
+        align-items: center 
+        justify-content: space-around
+        border-radius: 8px
+        &-text 
+            max-width: 197px
+            font-size: 16px
+            line-height: 22px
+            color: $menu-head-link-color
+        &-img 
+            padding-left: 20px
+            padding-top: 8px
+            padding-bottom: 8px
+
+.card
+    &-one 
+        margin-bottom: 20px
+@media screen and ( max-width:992px )
+    
+    .buy 
+        display: none  
+@media screen and ( min-width:993px )
+    .buy 
+        display: block
+@media screen and ( max-width:845px )
+    
+@media screen and ( max-width:576px )
+    .scoreboardes
+        &-item 
+            margin-right: 25px
+            &-name 
+                font-size: 16px
+@media screen and ( max-width:576px )
+    .scoreboardes
+        &-item 
+            margin-right: 20px
+            &-name 
+                font-size: 15px
+                
+    
+
+                

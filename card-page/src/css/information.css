@@ -1,0 +1,145 @@
+.information {
+  background-color: #e5e5e53d;
+}
+
+.scoreboard {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-top: 1px solid #7e808421;
+  border-bottom: 1px solid #7e808421;
+}
+
+.scoreboardes {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+}
+
+.scoreboardes-item {
+  margin-right: 59px;
+  font-size: 18px;
+  line-height: 23px;
+  color: #999999;
+  position: relative;
+}
+
+.scoreboardes-item-img {
+  display: none;
+  position: absolute;
+  top: 47px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.descr {
+  padding-top: 37px;
+}
+
+.descr-item {
+  padding-bottom: 30px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+}
+
+.descr-item span {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.params {
+  display: block;
+  padding-bottom: 20px;
+}
+
+.params-title {
+  padding-bottom: 24px;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #333333;
+}
+
+.params-key {
+  padding-bottom: 20px;
+  min-height: 68px;
+}
+
+.params-value {
+  padding-bottom: 20px;
+  min-height: 68px;
+}
+
+.buy {
+  padding-top: 37px;
+  padding-bottom: 60px;
+}
+
+.buy-title {
+  padding-bottom: 31px;
+  font-size: 24px;
+  line-height: 29px;
+  color: #333333;
+}
+
+.buy-card {
+  background-color: #fff;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 8px;
+}
+
+.buy-card-text {
+  max-width: 197px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #333333;
+}
+
+.buy-card-img {
+  padding-left: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.card-one {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 992px) {
+  .buy {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .buy {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .scoreboardes-item {
+    margin-right: 25px;
+  }
+  .scoreboardes-item-name {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .scoreboardes-item {
+    margin-right: 20px;
+  }
+  .scoreboardes-item-name {
+    font-size: 15px;
+  }
+}

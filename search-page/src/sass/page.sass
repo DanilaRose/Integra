@@ -1,0 +1,84 @@
+@import 'variables.sass'
+
+.page 
+    padding-top: 21px
+    padding-bottom: 160px
+    background-color: $bacground-color
+    &s 
+        display: flex 
+        align-items: flex-start
+        justify-content: space-between
+        &-item
+            font-size: 14px
+            &-nav
+                margin-top: 10px
+                font-size: 18px
+                line-height: 24px
+                color: $menu-link-color
+                &:hover 
+                    color: $hover-color
+            &-title
+                margin-bottom: 34px
+                font-size: 36px
+                line-height: 36px
+                color: $menu-head-link-color
+            &-card 
+                margin: 0 auto
+                margin-bottom: 30px
+                cursor: pointer
+                background-color: $white
+                border-radius: 8px
+                &_img 
+                    padding: 50px 35px 50px 35px
+                    text-align: center
+                    height: 299px
+                    position: relative
+                    img 
+                        position: absolute 
+                        top: 50%
+                        left: 50%
+                        transform: translate(-50%, -50%)
+                        max-width: 200px 
+                        max-height: 200px
+                &_descr
+                    padding: 15px 0 21px 19px 
+                    text-align: left
+                    border-top: 2px solid $bacground-color
+                    font-size: 20px
+                    line-height: 28px
+.page 
+    &-category 
+        width: 245px
+        // margin-right: 55px
+.link 
+    margin-left: 55px
+    max-width: 870px
+
+
+@media screen and ( max-width:992px )
+    .page
+        &-category 
+            display: none
+    .link 
+        margin-left: 0
+@media screen and ( max-width:576px )
+    .pages 
+        &-item 
+            &-card
+                &_img 
+                    img 
+                        max-width: 170px 
+@media screen and ( max-width:415px )
+    .pages 
+        &-item 
+            &-card
+                &_img 
+                    max-height: 140px
+                    img 
+                        max-width: 106px 
+                        max-height: 106px
+                &_descr 
+                    padding: 13px 8px 21px 8px
+                    font-size: 16px
+                    line-height: 29px
+    

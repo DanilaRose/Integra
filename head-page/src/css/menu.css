@@ -1,0 +1,129 @@
+.container-fluid {
+  max-width: 1440px;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+.head {
+  background-color: white;
+}
+
+.head-item {
+  padding-top: 10px;
+  padding-bottom: 13px;
+  margin: 0 auto;
+  max-width: 1440px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+
+.head-nav {
+  display: -webkit-box;
+  display: flex;
+  position: relative;
+}
+
+.head-nav_item {
+  padding-left: 40px;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.head-nav_item__search img:hover {
+  -webkit-transition: scale, 0.2s;
+  transition: scale, 0.2s;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.head-nav_item__social {
+  padding-left: 19.75px;
+}
+
+.head-nav_item__social img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.head-nav_item__social img:hover {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+
+.head-nav_item span {
+  color: #999999;
+  cursor: pointer;
+}
+
+.head-nav_item__collapsible {
+  cursor: pointer;
+}
+
+.head-nav_item__collapsible__arrow {
+  padding-left: 7px;
+}
+
+.content {
+  padding: 30px 78px 31px 30px;
+  display: none;
+  max-height: 25rem;
+  -webkit-box-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  justify-content: center;
+  border-radius: 15px;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+  position: absolute;
+  top: 48px;
+  background-color: white;
+  z-index: 10;
+}
+
+.content::after {
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  display: block;
+  position: absolute;
+  top: -9px;
+  left: 144px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.contents {
+  padding-right: 45px;
+}
+
+.contents-link {
+  padding-bottom: 6px;
+  display: block;
+  color: #666666;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.contents-link:hover {
+  color: #049FFB;
+}
+
+.contents-link-head {
+  margin-bottom: 10px;
+  color: #333333;
+  font-weight: 600;
+  font-size: 18px;
+}

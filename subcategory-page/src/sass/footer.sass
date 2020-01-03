@@ -1,0 +1,57 @@
+@import 'variables.sass'
+
+.footer
+    background-color: $menu-head-link-color
+    &-item
+        padding-top: 60px
+        padding-bottom: 34px
+        &-text 
+            padding-top: 12px
+            font-size: 18px
+            line-height: 22px
+            color: $footer-descr
+        &-link
+            display: block
+            font-size: 18px
+            line-height: 31px
+            color: $footer-descr
+            &:hover 
+                 color: $hover-color
+        &-title 
+            padding-bottom: 19px
+            font-size: 18px
+            line-height: 22px
+            color: $footer-descr
+        &-input 
+            margin-bottom: 15px
+            margin-right: 10px
+            padding: 9px 7px 11px 14px
+            border: none 
+            border-radius: 5px
+            &:focus 
+                border: 2px solid $hover-color
+                outline: none
+        &-button 
+            padding: 13px 23px 12px 23px
+            text-transform: uppercase
+            font-size: 14px
+            line-height: 20px
+            color: $footer-descr
+            background-color: $hover-color
+            border: none
+            border-radius: 38px
+@media screen and ( max-width:576px )
+    .footers 
+        margin: 0 auto
+    .footer 
+        display: none
+    .footer 
+        &-sm 
+            display: block
+@media screen and ( min-width:577px )
+    .footer 
+        display: block
+    .footer 
+        &-sm 
+            display: none
+    

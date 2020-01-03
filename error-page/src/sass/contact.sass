@@ -1,0 +1,90 @@
+@import 'variables.sass'
+
+
+.contact
+    padding-bottom: 82px
+    background-color: $bacground-color-dark
+    &s
+        margin: 0 auto
+        max-width: 828px
+        &-title
+            padding-top: 80px
+            padding-bottom: 20px
+            font-size: 46px
+            line-height: 50px
+            color: $menu-head-link-color
+        &-subtitle
+            padding-bottom: 29px
+            max-width: 554px
+            font-size: 20px 
+            line-height: 24px
+            color: $menu-link-color
+.form
+    &-input
+        margin-bottom: 20px
+        margin-right: 33px
+        padding: 16px 0 15px 16px
+        border-radius: 8px
+        border: none
+        width: 100%
+        &:focus 
+            outline: none
+            border: 2px solid $hover-color
+    &-button 
+        padding: 8px 38px 12px 40px
+        border: 1px solid transparent
+        border-radius: 30px
+        font-size: 20px
+        color: $white
+        background-color: $hover-color
+    &-item 
+        margin-bottom: 30px
+        display: flex 
+        align-items: flex-start
+        &-descr 
+            margin-bottom: 36px
+            &_title 
+                text-transform: uppercase
+                font-size: 12px
+                line-height: 14px
+                color: $notActive-color
+            &_link
+                font-size: 20px
+                line-height: 24px
+                color: $menu-link-color
+                a
+                    &:hover 
+                        color: $hover-color
+                    img
+                        padding-right: 7px
+                        filter: grayscale(100)
+                        &:hover 
+                            filter: grayscale(0)
+.message 
+    padding-right: 16px
+    height: 150px
+    overflow: auto
+                
+@media screen and ( max-width:992px )
+    .contact
+        display: none 
+    .contact
+        &-lg 
+            display: block
+@media screen and ( min-width:993px )
+    .contact
+        display: block
+    .contact
+        &-lg 
+            display: none
+@media screen and ( max-width:576px )
+    .form 
+        &-button 
+            width: 100%    
+@media screen and ( max-width:415px )
+    .contacts
+            max-width: 280px
+            &-title 
+                font-size: 39px
+                    
+    

@@ -1,0 +1,62 @@
+@import 'variables.sass'
+
+.advantage
+    padding-top: 40px
+    background-color: $bacground-color
+    &s 
+        border-radius: 8px
+        background-color: $white
+        &-title
+            padding-top: 19px
+            padding-left: 60px
+            padding-bottom: 10px
+            text-transform: uppercase
+            letter-spacing: 0.06em
+            font-weight: 600
+            font-size: 14px
+            line-height: 18px
+        &-descr 
+            display: flex 
+            align-items: flex-start
+            justify-content: center
+            &__img 
+                padding-left: 16px
+                padding-right: 16px
+                img 
+                    max-width: 27px
+                    max-height: 26px
+            &__text 
+                padding-bottom: 20px
+                padding-right: 4px
+                color: $menu-link-color
+                font-size: 14px
+                line-height: 17px
+@media screen and ( max-width:1200px )
+    .advantages
+        &-descr 
+            height: 80px
+@media screen and ( max-width:992px )
+    .advantages
+        margin: 0 auto
+        max-width: 390px
+        &-descr 
+            margin-bottom: 30px
+            height: none
+            &__img 
+                padding-left: 30px
+                padding-right: 30px
+        &-title 
+            padding-left: 87.5px
+@media screen and ( max-width:660px )
+    .advantages
+        &-descr 
+            height: none
+@media screen and ( max-width:576px )
+    .advantages
+        &-descr 
+            height: none
+
+            
+
+
+    

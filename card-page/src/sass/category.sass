@@ -1,0 +1,114 @@
+@import 'variables.sass'
+
+.category 
+    background-color: $bacground-color
+    &-slider 
+        margin: 0 auto
+        max-width: 280px
+        max-height: 600px
+.section
+    &-category
+        padding-bottom: 160px
+        &-name
+            margin-left: 0
+            margin-right: 0
+            padding-top: 60px
+            padding-bottom: 30px
+            display: flex
+            align-items: flex-end
+            justify-content: space-between
+            &-title
+                padding-bottom: 10px
+                font-size: 32px
+                line-height: 38px
+                color: $menu-head-link-color
+            &-all 
+                font-size: 15px
+                color: $menu-head-link-color
+                line-height: 21px
+                &:hover 
+                    color: $hover-color
+.categories
+    &-card 
+        margin-bottom: 30px
+        cursor: pointer
+        background-color: $white
+        border-radius: 8px
+        &-img 
+            padding: 50px 35px 50px 35px
+            text-align: center
+            height: 299px
+            position: relative
+            img 
+                position: absolute 
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
+                // max-width: 200px 
+                // max-height: 200px
+        &-descr
+            padding: 15px 0 21px 19px 
+            border-top: 2px solid $bacground-color
+            font-size: 20px
+            line-height: 28px
+            min-height: 113px
+@media screen and ( max-width:768px )
+    .section
+        &-category 
+            &-name 
+                margin-left: 0
+                margin-right: 0
+@media screen and ( max-width:576px )
+    .category
+        display: none 
+        &-slider 
+            max-width: 390px
+    .screen
+        &-sm
+            display: block
+    .category
+        &-card
+            display: block
+    .categories
+        &-card 
+            &-descr 
+                font-size: 16px
+            &-img 
+                img 
+                    max-width: 205px
+@media screen and ( min-width:577px )
+    .category
+        display: block
+    .screen
+        &-sm
+            display: none
+    .category
+        &-card
+            display: none        
+@media screen and ( max-width:500px )
+    .section
+        &-category 
+            &-name 
+                margin-left: 32px
+                margin-right: 32px
+@media screen and ( max-width:415px )
+    .section
+        &-category 
+            &-name 
+                margin-left: 0
+                margin-right: 0
+                &-title 
+                    font-size: 27px
+    .categories
+        &-card 
+            max-height: 400px
+            &-descr 
+                font-size: 16px
+                
+            &-img 
+                img 
+                    max-width: 106px
+                    max-height: 132px
+    .descriptions 
+        font-size: 13px
+        min-height: 153px
